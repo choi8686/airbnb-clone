@@ -20,7 +20,7 @@ class PhotoInline(admin.TabularInline):
 @admin.register(models.Room)
 class RoomAdmin(admin.ModelAdmin):
 
-    inlines = PhotoInline
+    inlines = (PhotoInline,)
 
     fieldsets = (
         (
